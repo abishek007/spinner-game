@@ -234,3 +234,12 @@ span b{
   color: #ff8500;
   padding-left: 5px;
 }
+
+.rewards-sec {
+  display: flex;
+  align-items: center;
+}
+
+.left-arrow {
+  padding-right: 5px;
+}

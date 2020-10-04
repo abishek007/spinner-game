@@ -14,6 +14,7 @@ import hundredCashback from "./images/100_cashback.svg";
 import twentyCashback from "./images/20_cashback.svg";
 import fiftyCashback from "./images/50_cashback.svg";
 import oneHalfSaving from "./images/1-5savings.svg";
+import leftArrow from "./images/left_arrow.svg";
 
 // Styles
 import "./App.css";
@@ -27,9 +28,12 @@ const INFO_SUB_TEXT ="Tap on Spin or rotate the wheel anti-clockwise and release
 const QUERY_TEXT = "Have a question?";
 const REWARD_TEXT = "Your rewards";
 const TIME_INTERVAL = 113;
+const SUCCESS_MSG = "Score Added Successfully"
 
 function App() {
   const [load, setLoad] = useState(0);
+  const [drag, setDrag] = useState(false);
+  const [startPosition, setStartPosition] = useState();
 
   // UPDATE THE SCORE IN THE GOOGLE SPREADSHEET
   const accessSpreadSheet = async (result) => {
@@ -42,13 +46,12 @@ function App() {
       timestamp: new Date().toISOString(),
       spin_result_index: result,
     };
-
     await promisify(sheet.addRow)(row)
+    alert(SUCCESS_MSG)
   };
 
   // SPINNER CALCULATION
   const startSpin = () => {
-    console.log("one");
     const x = 1024; //min value
     const y = 9999; // max value
     let totalLoad = 110;
@@ -95,16 +98,45 @@ function App() {
 
       clearInterval(timeInterval);
       accessSpreadSheet(point)
-      console.log("point: ", point);
     }, 5000);
   };
 
+  const spinMouseDown = (e) => {
+    e.preventDefault();
+    setDrag(true)
+    // mouse pos
+    const Mx = e.clientX, My = e.clientY
+    setStartPosition(Mx)
+  }
+
+  const spinMouseUp = (e) => {
+    e.preventDefault();
+    setDrag(false)
+    // mouse pos
+    const Mx = e.clientX, My = e.clientY
+    if ((startPosition - Mx) > 120) {
+      startSpin()
+    }
+  }
+
+  const spinMouseMove = (e) => {
+    e.preventDefault();
+    // mouse pos
+    if (drag) {
+      const Mx = e.clientX, My = e.clientY
+      document.getElementById("box").style.transform = "rotate(" + (-Mx + 50) + "deg)";
+    }
+  }
+
   return (
     <>
-      <p>{REWARD_TEXT}</p>
+      <div className="rewards-sec">
+        <img src={leftArrow} alt="left-arrow" className="left-arrow" />
+        <p>{REWARD_TEXT}</p>
+      </div>
       <div id="mainbox" className="mainbox">
         <img src={triangleMark} alt="triangle-mark" className="triangle-mark" />
-        <div id="box" className="box">
+        <div id="box" className="box" onMouseDown={spinMouseDown} onMouseUp={spinMouseUp} onMouseMove={spinMouseMove}>
           <div className="box1">
             <WheelPortion
               className="span1"
