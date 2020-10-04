@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "spinner-game-291311",
+  "private_key_id": "6adb400a495dd33382d7087b21a2cfae15dba8c5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCG9kPoipldluUI\nf7Dxcs+FKTTkqAYSxshVWCC3kG4q4J8vyC93BqouIyiYANZ0N9aCLKaVMO7YMWJK\nTN802zePvvxT/yS9+aKf163oUy6YO3SvYrvk0ce+jNtL86U2FKmPP+ofkkNnX76t\nKFo3QLpT41dqS0Glv//1oDB7jhom8Z/AYH6CrmzKsPDLOHau57mg3Y67ezWIkgl3\nOSyw67oPVB+X3U+fbLRMqMULFLSvw0Ehv0iNC6k6Ct/MATV+Yjsz1pApU3pxBbZw\nZYshN1Hq/KGzAmtWZGWGNIePLXRzkoMAV0YrmbOetLVbVDrxakp9p5ZgDLRVGAcL\njTrJnCTTAgMBAAECggEAOQCKbg0b+Yth8NT9xvzW6UceL/VHm2aZ9nHiX6WA4ls8\n4NGMOpl2B0aSPqEb8roiv5hcQ2cHeghhm0AchhaQwQXJTTDWM+bb6OcPbLC1XVa/\nUdRBx8NSugiEFvAxN0ZC114HZI5CKccmobwJXozYJdY/dYWTlI4jbXra/1Rld0y5\nRgSv3o0MULpvLtU5in8HqSlaiTtFOf5QDme2vlQfrTWwn2lfuULrVM4n4n8O0T7L\n6QS9jm+Lb2E+2RnOiXlhWDWxLU4LdH0F8V4bpmNrRngzJkaCyYTnX/A5j8jxgERL\nBuLq0A0dqKoKsaZMGnTqM9dC/qyEGMSjqxS4rsmQAQKBgQC79CoZik7ymmW550B9\nKBaO+/YVoC9a7XnlOEeLwjK3nGIZ4fBK0+1LmFmyWcFfUmeXv6EfPZ69M/9EYB6a\nVpIPRGZJiUGEBrE7FGpp+6JNMiXjNcGeF220phN7vwteTcAhSolGcTEaUmIVHEtk\nSM0YqaUaCzxHFIuRate0SonwEwKBgQC30r4I5g1lydTVb545KMXAnfCdCoVuYtSS\nORnUqyUNF0xO6XoyWPBrvYsup36ttD4Xs6WlurxLVKbZ64JZuCpWY9TQN09KvR5f\ns9d+oGlZkb2lpKxx8aYJBmKDFRE0i7lqyAZcxzWRZuMrFqCu/m5kDy/Z8h48qrcc\nGrZg4LcQQQKBgBv4fR9p5s/RzFu7H2zAv4Kt2nRjb0iv2JkVJAiXcObEPhEt/42T\nNlgupwKUuuNNpx79JKQ6jloH1/A8AbHkOj5NZo+A/qAAQvXQ1vlIumGUmfDTOiol\nwGzG3lVnG/D/zxzlM8Ko667IHdKYcFvPPb5y2KAklebaFt8gMFOjWB3DAoGAYdTP\n/K5rDPQ4yIsJ+0O+0z97cijKULBaj6PCIpQfOPNgUlMiDK+W7NBIxcCww8O8lCKx\nEx3p3nGkBzC3BAbmyWmCNnppQc6a3rY5BxRaXSgadZDJki7Yfc8fGMJakMuYF8Ny\n12fSE5tdZW46gEe6+pe2kNixzPnSUCvLSo3t/8ECgYA0lgU3fKBrpd9Y2g02FzkL\n+aFXK5MpDidcCTq8Lidjaje+haRdmwldsrnlgA7ANf6BnRLhE5zGzNndCIc26jrg\nMothP9U+0HhvOt1Kd8DBwfvEa+MCPdZAAIUYU7UWcOvFY8mnb3iJDH/pMa1OU3+j\nwpr3UOYIrFHYk0QPSg06dw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "spinnergamedata@spinner-game-291311.iam.gserviceaccount.com",
+  "client_id": "104951131944771011496",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spinnergamedata%40spinner-game-291311.iam.gserviceaccount.com"
+}
