@@ -33,7 +33,7 @@ function App() {
 
   // UPDATE THE SCORE IN THE GOOGLE SPREADSHEET
   const accessSpreadSheet = async (result) => {
-    const doc = new GoogleSpreadSheet(SPREAD_SHEET_KEY);
+    const doc = new GoogleSpreadSheet(SPREAD_SHEET_KEY, null, { gzip: false });
     await promisify(doc.useServiceAccountAuth)(keys);
     const info = await promisify(doc.getInfo)();
     const sheet = info.worksheets[0];
